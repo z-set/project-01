@@ -1,4 +1,4 @@
-$(function () {
+$(function() {
     // 点击首页按钮 
     $('.homePage').on('click', function () {
         // 跳转到首页
@@ -20,4 +20,5 @@ $(function () {
         // 跳转到首页
         location.href = '../views/index.html'
     })
+
 })

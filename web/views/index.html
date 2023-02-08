@@ -72,57 +72,7 @@
             </div>
             <!-- 课程列表 -->
             <div class="goods">
-                <ul>
-                    <li>
-                        <div class="pic">
-                            <img src="./images/js.jpg" alt="">
-                        </div>
-                        <div class="text">
-                            【前端】 微信小程序
-                        </div>
-                        <div class="data">
-                            <p class="study"><span>20</span>人学习</p>
-                            <p class="money"> ￥<span>199</span></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="pic">
-                            <img src="./images/js.jpg" alt="">
-                        </div>
-                        <div class="text">
-                            【前端】 微信小程序
-                        </div>
-                        <div class="data">
-                            <p class="study"><span>20</span>人学习</p>
-                            <p class="money">￥<span>199</span></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="pic">
-                            <img src="./images/js.jpg" alt="">
-                        </div>
-                        <div class="text">
-                            【前端】 微信小程序
-                        </div>
-                        <div class="data">
-                            <p class="study"><span>20</span>人学习</p>
-                            <p class="money">￥<span>199</span></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="pic">
-                            <img src="./images/js.jpg" alt="">
-                        </div>
-                        <div class="text">
-                            【前端】 微信小程序
-                        </div>
-                        <div class="data">
-                            <p class="study"><span>20</span>人学习</p>
-                            <p class="money">￥<span>199</span></p>
-                        </div>
-                    </li>
-
-                </ul>
+                
             </div>
         </div>
     </div>
@@ -139,8 +89,30 @@
         </div>
     </div>
 
+    <!-- 定义模板 -->
+    <script type="text/html" id="tpl-course">
+        <ul>
+            {{each data}}
+            <li>
+                <div class="pic">
+                    <img src="{{$value.img}}" alt="">
+                </div>
+                <div class="text">
+                    {{$value.name}}
+                </div>
+                <div class="data">
+                    <p class="study"><span>{{$value.count}}</span>人学习</p>
+                    <p class="money"> ￥<span>{{$value.price}}</span></p>
+                </div>
+            </li>
+            {{/each}}
+
+        </ul>
+    </script>
+
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="../web.js"></script>
+    <script src="../node_modules/art-template/lib/template-web.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
