@@ -1,0 +1,100 @@
+.title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 18px;
+  color: #446adf;
+}
+.title::after,
+.title::before {
+  display: inline-block;
+  margin-top: 12px;
+  content: '';
+  width: 5px;
+  height: 5px;
+  background-color: #446adf;
+  border-radius: 50%;
+  vertical-align: top;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 64px;
+  background-color: #446adf;
+}
+.header .mail img {
+  width: 38px;
+  height: 30px;
+}
+.banner {
+  width: 100%;
+  height: 170px;
+  margin-bottom: 16px;
+}
+.main .jobCourse {
+  height: 242px;
+  width: 100%;
+  margin-bottom: 16px;
+  background-color: #fff;
+}
+.main .jobCourse .courseList {
+  height: 190px;
+  width: 100%;
+  padding-bottom: 18px;
+}
+.main .jobCourse .courseList ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.main .jobCourse .courseList ul li {
+  width: 124px;
+  text-align: center;
+}
+.main .jobCourse .courseList ul li img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.main .wcCourse {
+  padding-top: 16px;
+  background-color: #fff;
+}
+.main .wcCourse .goods ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 6px;
+}
+.main .wcCourse .goods ul li {
+  height: 158px;
+  margin-bottom: 10px;
+}
+.main .wcCourse .goods ul li .pic {
+  height: 100px;
+}
+.main .wcCourse .goods ul li .pic img {
+  width: 178px;
+  border-radius: 5px;
+}
+.main .wcCourse .goods ul li .text {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+}
+.main .wcCourse .goods ul li .data {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+.main .wcCourse .goods ul li .data .study {
+  color: #d0d0d0;
+}
+.main .wcCourse .goods ul li .data .money {
+  color: #446adf;
+}

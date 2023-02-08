@@ -1,0 +1,126 @@
+// 公共样式
+.title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #446adf;
+
+    &::after,
+    &::before {
+        display: inline-block;
+        margin-top: 12px;
+        content: '';
+        width: 5px;
+        height: 5px;
+        background-color: #446adf;
+        border-radius: 50%;
+        vertical-align: top;
+    }
+
+}
+
+
+// 头部区域
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+    background-color: #446adf;
+
+    .mail {
+        img {
+            width: 38px;
+            height: 30px;
+        }
+    }
+}
+
+// banner区域
+.banner {
+    width: 100%;
+    height: 170px;
+    margin-bottom: 16px;
+}
+
+// 主体区域
+.main {
+    .jobCourse {
+        height: 242px;
+        width: 100%;
+        margin-bottom: 16px;
+        background-color: #fff;
+
+        .courseList {
+            height: 190px;
+            width: 100%;
+            padding-bottom: 18px;
+
+            ul {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                align-content: space-between;
+                li {
+                    width: 124px;
+                    // margin-bottom: 32px;
+                    text-align: center;
+
+                    img {
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+    .wcCourse {
+        padding-top: 16px;
+        background-color: #fff;
+
+        .goods {
+            ul {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                padding: 0 6px;
+                li {
+                    height: 158px;
+                    margin-bottom: 10px;
+                    .pic {
+                        height: 100px;
+                        img {
+                            width: 178px;
+                            border-radius: 5px;
+                        }
+                    }
+
+                    .text {
+                        margin-bottom: 10px;
+                        font-size: 16px;
+                        font-weight: 700;
+                        color: #333;
+                    }
+
+                    .data {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 12px;
+                        font-size: 14px;
+                        .study {
+                            color: #d0d0d0;
+                        }
+
+                        .money {
+                            color: #446adf;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
