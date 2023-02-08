@@ -22,6 +22,8 @@
 
 // 头部区域
 .header {
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -35,12 +37,18 @@
             height: 30px;
         }
     }
+
+    .iconfont {
+        font-size: 24px;
+        color: #fff;
+    }
 }
 
 // banner区域
 .banner {
     width: 100%;
     height: 170px;
+    margin-top: 64px;
     margin-bottom: 16px;
 }
 
@@ -63,6 +71,7 @@
                 display: flex;
                 flex-wrap: wrap;
                 align-content: space-between;
+
                 li {
                     width: 124px;
                     // margin-bottom: 32px;
@@ -88,11 +97,14 @@
                 justify-content: space-between;
                 flex-wrap: wrap;
                 padding: 0 6px;
+
                 li {
                     height: 158px;
                     margin-bottom: 10px;
+
                     .pic {
                         height: 100px;
+
                         img {
                             width: 178px;
                             border-radius: 5px;
@@ -111,6 +123,7 @@
                         justify-content: space-between;
                         margin-bottom: 12px;
                         font-size: 14px;
+
                         .study {
                             color: #d0d0d0;
                         }
@@ -123,4 +136,36 @@
             }
         }
     }
+}
+
+
+// 底部区域
+.footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    height: 58px;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+
+    .homePage,
+    .catePage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #5bb5f5;
+        .iconfont {
+            font-size: 30px;
+        }
+        p {
+            margin-top: -10px;
+            font-size: 14px;
+
+        }
+    }
+
+   
 }

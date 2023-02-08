@@ -16,6 +16,8 @@
   vertical-align: top;
 }
 .header {
+  position: fixed;
+  top: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -27,9 +29,14 @@
   width: 38px;
   height: 30px;
 }
+.header .iconfont {
+  font-size: 24px;
+  color: #fff;
+}
 .banner {
   width: 100%;
   height: 170px;
+  margin-top: 64px;
   margin-bottom: 16px;
 }
 .main .jobCourse {
@@ -97,4 +104,31 @@
 }
 .main .wcCourse .goods ul li .data .money {
   color: #446adf;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 58px;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+}
+.footer .homePage,
+.footer .catePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #5bb5f5;
+}
+.footer .homePage .iconfont,
+.footer .catePage .iconfont {
+  font-size: 30px;
+}
+.footer .homePage p,
+.footer .catePage p {
+  margin-top: -10px;
+  font-size: 14px;
 }
