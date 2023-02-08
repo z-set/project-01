@@ -64,3 +64,30 @@ body {
 .clearfix {
   *zoom: 1;
 }
+.footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 58px;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+}
+.footer .homePage,
+.footer .catePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #5bb5f5;
+}
+.footer .homePage .iconfont,
+.footer .catePage .iconfont {
+  font-size: 30px;
+}
+.footer .homePage p,
+.footer .catePage p {
+  margin-top: -10px;
+  font-size: 14px;
+}
